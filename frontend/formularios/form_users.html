@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/users_form.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <form class="registro_usuarios" id="formulario">
+        <h2>Crear usuario</h2>
+        <input type="text" name="nombre" placeholder="Juan" required />
+        <input type="text" name="apellido" placeholder="Perez" required />
+        <input type="tel" name="numero" placeholder="1234567890" required />
+        <input type="date" name="fecha" placeholder="11-01-1998" required />
+        <input type="submit" value="Crear usuario" id="crear_usuario" />
+
+        <input type="hidden" name="id" />
+      </form>
+      <article>
+        <h2>Users</h2>
+        <table class="registros" id="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Telefono</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </main>
+    <template id="crud-template">
+      <tr>
+        <td id="nombre">Hernan</td>
+        <td id="apellido">Sanchez</td>
+        <td id="numero">1234567890</td>
+        <td id="fecha">11-07-1999</td>
+      </tr>
+    </template>
+  </body>
+  <script src="js/form_users.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form_pdf.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main>
+      <form class="form_pdf" id="formulario" enctype="multipart/form-data">
+        <h2>Subir archivo PDF</h2>
+        <input
+          id="titulo"
+          type="text"
+          name="titulo"
+          placeholder="Ingrese un titulo para el PDF"
+          required
+        />
+        <label for="archivo_pdf">
+          <input
+            id="archivo_pdf"
+            type="file"
+            name="file"
+            accept=".pdf"
+            placeholder="adjunte el pdf"
+            required
+          />
+        </label>
+        <input type="submit" value="Subir archivo" />
+      </form>
+      <div class="container-btn">
+        <button id="preview">Previsualizar archivo</button>
+      </div>
+
+      <article>
+        <h2>Archivos subidos</h2>
+        <table class="registros" id="crud-table">
+          <thead>
+            <tr>
+              <th>Titulo</th>
+              <th>Path</th>
+              <th>Ver / Descargar</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+
+      <template id="crud-template">
+        <!-- <tr>
+          <td id="titulo">Titulo</td>
+          <td id="path">Path</td>
+          <td><a id="ver" download>Ver</a><br /></td>
+        </tr> -->
+      </template>
+    </main>
+  </body>
+  <script src="js/form_pdf.js"></script>
+</html>

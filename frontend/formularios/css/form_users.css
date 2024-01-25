@@ -1,0 +1,28 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+main {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+}
+.registro_usuarios,
+.registros {
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.registro_usuarios > * {
+  padding: 0.5rem;
+  display: block;
+  margin: 1rem auto;
+  width: 50%;
+}
